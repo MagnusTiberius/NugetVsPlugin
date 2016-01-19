@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="EidPassportInc.VSPackage1.MyControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             Background="{DynamicResource VsBrush.Window}"
+             Foreground="{DynamicResource VsBrush.WindowText}"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             Name="MyToolWindow">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Margin="10" HorizontalAlignment="Center" Background="Black" Foreground="#FFF7F7F7">SureID Tool Window</TextBlock>
+            <Grid Height="100">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="89*"/>
+                    <ColumnDefinition Width="211*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Version" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="89" Background="White" Height="23"/>
+                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="5,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="196"/>
+                <Label Content="Version" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="89" Background="White" Height="23"/>
+                <Label Content="Title" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top" Width="89" Background="White" Height="23"/>
+                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="5,38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="196"/>
+            </Grid>
+            <Grid Height="100">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="149*"/>
+                    <ColumnDefinition Width="151*"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Build" Click="button1_Click" Width="120" x:Name="button1" Margin="10,19,19,54"/>
+                <Button Content="Deploy" Click="button1_Click" Width="120" x:Name="button1_Copy" Margin="10,19,21,54" Grid.Column="1"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>
